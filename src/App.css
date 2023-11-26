@@ -5,7 +5,7 @@
   font-family: 'poppins',sans-serif;
 }
 
-.TodoForm{
+.TodoWrapper{
   position: relative;
   width: 450px;
   height: 550px;
@@ -52,6 +52,13 @@ body{
   inset -3px -3px 5px rgb(0,0,0,0.5);
 }
 
+.heading{
+  color: whitesmoke;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
 .todo-input::placeholder{
   color: green;
 }
@@ -60,12 +67,17 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(red,blue,green);
-  color: #fff;
+  width: 98%;
+  margin-top: 10px;
+  background: whitesmoke;
+  color: purple;
   padding: 0.75rem 1rem;
-  border-radius: 5px;
-  margin-bottom: 1rem;
   cursor: pointer;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 5px 5px 7px rgb(0,0,0,0.25),
+  inset 2px 2px 5px rgb(0,0,0,0.5), 
+  inset -3px -3px 5px rgb(0,0,0,0.5);
 }
 
 .fa-trash {
