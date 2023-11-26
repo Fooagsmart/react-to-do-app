@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.TodoForm{
+  position: relative;
+  width: 450px;
+  height: 550px;
+  border-radius: 30px;
+  background: #2f363e;
+  padding: 30px 50px;
+  box-shadow: 25px 25px 75px rgb(0,0,0,0.25),10px 10px 70px rgb(0,0,0,0.25), 
+  inset 5px 5px 10px rgb(0,0,0,0.5), 
+  inset 5px 5px 20px rgb(255,255,255,0.2),
+  inset -5px -5px 15px rgb(0,0,0,0.75);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 100vh;
+  background: #2f363e;
+}
+
+.todo-input{
+  margin-right: 10px;
+  position: relative;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 5px 5px 7px rgb(0,0,0,0.25),
+  inset 2px 2px 5px rgb(0,0,0,0.5), 
+  inset -3px -3px 5px rgb(0,0,0,0.5);
+}
+
+.todo-btn {
+  background: purple;
   color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 5px 5px 7px rgb(0,0,0,0.25),
+  inset 2px 2px 5px rgb(0,0,0,0.5), 
+  inset -3px -3px 5px rgb(0,0,0,0.5);
 }
 
-.App-link {
-  color: #61dafb;
+.todo-input::placeholder{
+  color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(red,blue,green);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.completed {
+  color: blue;
+  text-decoration: line-through;
 }
