@@ -71,7 +71,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 98%;
+  max-width: 98%;
   margin-top: 10px;
   background: whitesmoke;
   color: purple;
