@@ -1,6 +1,6 @@
-import React, { useState, } from "react";
+import React, { useState } from "react";
 
-export const TodoForm = ({addTodo}) => {
+export const TodoForm = ({ addTodo }) => {
   const [value, setValue] = useState("");
 
   const handleSubmit = (e) => {
@@ -8,8 +8,7 @@ export const TodoForm = ({addTodo}) => {
 
     addTodo(value);
 
-    setValue("")
-
+    setValue("");
   };
   return (
     <form className="TodoForm" onSubmit={handleSubmit}>
