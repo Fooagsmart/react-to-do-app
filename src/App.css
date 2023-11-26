@@ -64,7 +64,7 @@ body{
 }
 
 .todo-input::placeholder{
-  color: rgb(104, 35, 104)30)85);
+  color: grey;
 }
 
 .Todo {
