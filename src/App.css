@@ -94,9 +94,41 @@ body{
 }
 
 @media screen and (max-width: 600px) {
-  .app {
+  /* .app {
     padding: 4rem 2rem;
-  }
+  } */
+  
+.TodoWrapper{
+  position: relative;
+  width: 250px;
+  height: 300px;
+  border-radius: 30px;
+  background: #2f363e;
+  padding: 15px 25px;
+}
+.heading{
+  font-size: 1rem;
+}
+.todo-input{
+  width: 100%;
+  font-size: 0.8rem;
+}
+.TodoForm{
+  display: flex;
+}
+
+
+.todo-btn {
+  display: flex;
+  /* white-space:nowrap; */
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 0.7rem;
+}
+.todo-input::placeholder{
+  text-wrap: wrap;
+}
 }
 
 @media screen and (max-width: 400px) {
